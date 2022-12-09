@@ -1,0 +1,333 @@
+/*Mettons une image en fond pour notre page */
+body{
+   background-image:url(MA.jpg) ;
+}
+/*Stylisons l'en tete */
+header{
+   position:fixed ;
+   height:100px;
+   width: 1600px;
+   left:1px;
+   top:2px;
+   z-index:10;
+   background-color:#f3eaea83 ;
+}
+header ul #lingerie{
+   position: absolute;
+   padding-left:1100px;
+   font-family:Snell Roundhand, cursive ;
+   font-size:40px;
+   left: 9px;
+   letter-spacing: 30px;
+   color: #782603;
+}
+header #logo{
+   position:absolute;
+   font-family:Snell Roundhand, cursive ;
+   font-size:50px;
+   bottom:25px;
+   letter-spacing: 25px;
+   color: #782603;
+}
+header #photo{
+    position: absolute;
+    left:680px;
+    bottom:-35px;
+}
+/*Stylisons le main */
+ main{
+    position:relative;
+    font-size: 23px;
+    bottom:4px;
+    top:22px; 
+    height:700px;
+    line-height: 1px;
+}
+/*Stylisons les blocs ou se retrouvent les articles */
+#items{
+    position: absolute;
+    height:500px;
+    width: 1510px;
+    top:130px;
+}
+#items div{
+    position:absolute;
+    height:330px;
+    width:300px;
+    color: #782603;
+    background-color: rgba(255, 255, 255, 0.794);
+    border:solid 10px #d68512f1; ;
+    border-left:solid 1px#050505f1; ;
+    clip-path: polygon( 
+    calc(0% + 5px) calc(0% + 5px), /* top left */
+    calc(100% - 5px) calc(0% + 5px), /* top right */
+    calc(100% - 5px) calc(100% - 5px), /* bottom right */
+    calc(0% + 5px) calc(100% - 5px) /* bottom left */
+  );
+    transition: clip-path 0.2s linear;
+}
+#items div:hover{
+    /* Clip-path spanning the entire box so it's no longer hiding the full-width border. */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+#item1{
+   left:370px;
+   top: 45px;
+}
+#item2{
+   left:1180px;
+   top: 45px;
+}
+#item3{
+   top:700px;
+   left:370px;
+}
+#item4{
+   left:1180px;
+   top:700px;
+}
+/*Stylisons les blocs ou se retrouvent les photos des articles*/
+.photoItems{
+    z-index: 2;
+    position:absolute;
+    background: linear-gradient( to right, #78260395,#1f1e1d,#1f1e1d,#78260395);
+    width: 320px;
+    height:420px;
+    border-left:solid 5px rgb(225, 125, 25) ;
+    border-top:solid 5px rgb(202, 101, 13) ;
+    border-right:solid 10px #c96219f1 ;
+    border-radius: 20px 0px 0px 70px;
+}
+#pic1{
+    left: 40px;
+}
+#pic2{
+    left:850px; 
+}
+#pic3{
+    left:40px;
+    top:660px;
+}
+#pic4{
+    top:660px;
+    left:850px; 
+}
+.sweetieItem{
+    font-family: 'Open Sans', sans-serif;
+    color: #782603;
+    text-align: center;
+    padding-top: 30px;
+    text-shadow:  2px 2px 4px rgb(241, 232, 232);
+} 
+.sweetiePrice{
+    font-family: 'Open Sans', sans-serif;
+    color: #782603;
+    text-align: center;
+    padding-top: 30px;
+    text-shadow:  2px 2px 4px rgb(241, 232, 232);
+}
+ /*Stylisons les boutons */
+.add{
+    position:absolute;
+    bottom:110px;
+    left: 20px;
+    background-color: #ef8812dc;
+    border: 2px solid white ;
+    border-radius: 20px 30px  20px 70px;
+    color:white;
+}
+.reduce{
+    position:absolute;
+    bottom:110px;
+    left: 40px;
+    background-color:#ef8812dc;
+    border: 2px solid white ;
+    color: white;
+}
+input{
+    position:absolute;
+    bottom:112px;
+    left: 59px;
+    background-color: #ffffffdf;
+    border: 2px solid #eee8e1dc;
+    width:125px ;
+    height:12px;
+}
+.remove{
+    position:absolute;
+    bottom:111px;
+    left: 190px;
+    background-color: #ef8812dc;
+    border: 2px solid white ; 
+    color: #782603;
+    height:20px;
+}
+.panierFinal{
+    position:absolute;
+    bottom:10px;
+    background-color: #c96219f1;;
+    border: 2px solid rgb(251, 251, 251) ; 
+    color: white;
+}
+section{
+    position: absolute;
+    right:305px;
+    top:482px;
+    height: 60px;
+    width:900px;
+    background-color: rgba(89, 40, 2, 0.4);
+    text-align: center;
+    padding-top: 50px;
+    border:5px solid #782603d5;
+    color:rgb(255, 145, 0) ;
+}
+#val{
+    position: absolute;
+    right:160px;
+    top:518px;
+    border:2px solid #782603;
+    color: white;
+    background-color: #c23a09cf;
+   
+}
+.prixTotalArticle{
+    background-color:#782603;
+    position:absolute;
+    font-size: 30px;
+    left: 234px;
+    padding-top: 42px;
+    padding-left: 923px;
+    width:125px;
+    background-color: #5044095e;
+    border:2px solid rgb(255, 145, 0);
+    color: rgb(255, 145, 0);
+}
+#prixTotalArticle1{
+    top:1500px;
+    height: 44px;  
+}
+#prixTotalArticle2{
+    top:1600px;
+    height: 44px; 
+}
+#prixTotalArticle3{
+    top:1700px;
+    height: 44px;  
+}
+#prixTotalArticle4{
+    top:1800px;
+    height: 44px;
+}
+.panier{
+    position: absolute;
+    padding-top: 42px;
+    padding-left: 123px;
+    font-size: 30px;
+    height: 44px;
+    width:705px;
+    left: 134px;
+    color: rgb(255, 145, 0);
+}
+#panier1{
+    top:1500px;
+}
+#panier2{
+    top:1600px; 
+}
+#panier3{
+    top:1700px;
+}
+#panier4{
+    top:1800px;
+}
+#recu{
+    position:absolute;
+    font-size: 104px;
+    top:1304px;
+    left:504px;
+    font-family:Snell Roundhand, cursive ;
+    color: rgb(255, 145, 0);
+}
+
+#acc{
+    position: absolute;
+    right:1230px;
+    top:518px;
+    border:2px solid #782603;
+    color: white;
+    background-color: #c23a09cf;
+}
+
+#btn1{
+   position: absolute;
+    z-index: 8;
+    left:330px;
+    top:150px;
+    border-radius: 0px 0px 25px 25px;
+    width:23px;
+    height: 19px;
+    background-color: rgba(254, 250, 250, 0);
+    border:2px solid rgba(255, 255, 255, 0);
+}
+
+#btn2{
+    z-index: 8;
+    position: absolute;
+    left:1140px;
+    top:150px;
+    border-radius: 0px 0px 25px 25px;
+    width:23px;
+    height: 19px;
+    background-color: rgba(254, 250, 250, 0);
+   border:2px solid rgba(255, 255, 255, 0);
+}
+#btn3{
+    z-index: 8;
+    position: absolute;
+    left:1140px;
+    top:810px;
+    border-radius: 0px 0px 25px 25px;
+    width:23px;
+    height: 19px;
+    background-color: rgba(254, 250, 250, 0);
+    border:2px solid rgba(255, 255, 255, 0);
+}
+#btn4{
+    z-index: 8;
+    position: absolute;
+    left:330px;
+    top:810px;
+    border-radius: 0px 0px 25px 25px;
+    width:23px;
+    height: 19px;
+    background-color: rgba(254, 250, 250, 0);
+    border:2px solid rgba(255, 255, 255, 0);
+}
+#fa1{
+    position:absolute;
+    top: -7px;
+    left: -7px;
+    font-size: 31px;
+    color: rgb(248, 245, 245);
+ }
+ #fa2{
+    position:absolute;
+    top: -7px;
+    left: -7px;
+    font-size: 31px;
+    color: rgb(245, 248, 248);
+ }
+ #fa3{
+    position:absolute;
+    top: -7px;
+    left: -7px;
+    font-size: 31px;
+    color: rgb(248, 245, 245);
+ }
+ #fa4{
+    position:absolute;
+    top: -7px;
+    left: -7px;
+    font-size: 31px;
+    color: rgb(248, 245, 245);
+ }

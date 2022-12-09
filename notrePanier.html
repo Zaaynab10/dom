@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Sweetie Lingerie </title>
+   <link rel="stylesheet" href="notrePannier.css"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!-- La partie en-tete -->
+<header>
+      <ul  type="none">
+         <li id="logo"> Sweetie</li>
+         <li id="photo"> <img height="150px"src="emblème-de-lingerie-calibre-conception-logo-mode-femmes-118768233-removebg-preview.png"> </li>
+         <li id="lingerie" > Lingerie </p>
+      </ul>
+</header>
+<!-- Le main contenant tous nos articles  -->
+ <main>
+    <!-- Le div contenant tous nos articles  -->
+  <div id="items">
+     <!-- Le div contenant notre premier article , ses informations ainsi que ses fonctionnalites  -->
+     <div id="item1" >
+        <p class="sweetieItem">Modal Lace Back Cami Set</p>
+        <p class="sweetiePrice">prix:40,000 </p>
+        <button id="ajuster1" class="add">+</button>
+        <button id="reajuster1" class="reduce">-</button>
+        <input type="text" value="0" class="sum"></input>
+        <button class="panierFinal">Ajoutez au panier</button>
+        <button id="sup1"  class="remove"> remove </button>
+      </div>
+ <!-- photo de notre premier article -->
+    <img height="320px"id="pic1"class="photoItems"src="11172758_5OOG_111727585oog_om_f-removebg-preview.png">
+<!-- Le div contenant notre deuxieme article , ses informations ainsi que ses fonctionnalites  -->
+    <div id="item2" >
+       <p class="sweetieItem">Sheer Lace Robe</p>
+       <p class="sweetiePrice">Prix: 40,000 </p>
+       <button id="ajuster2" class="add">+</button>
+       <button id="reajuster2" class="reduce">-</button>
+       <input type="text" value="0" class="sum"></input>
+       <button class="panierFinal">Ajoutez au panier</button>
+       <button id="sup2"  class="remove"> remove </button>
+    </div>
+    <!-- photo de 2e  article -->
+    <img height="320px"id="pic2"class="photoItems"src="11181187_86Q4_1118118786q4_om_f-removebg-preview.png">
+<!-- Le div contenant notre 3e article , ses informations ainsi que ses fonctionnalites  -->
+    <div id="item3" >
+       <p class="sweetieItem">Wicked  Ruched Slip</p>
+       <p class="sweetiePrice">Prix:40,000 </p>
+       <button  id="ajuster3" class="add">+</button>
+       <button id="reajuster3" class="reduce">-</button>
+       <input type="text" value="0" class="sum"></input>
+       <button class="panierFinal">Ajoutez au panier</button>
+       <button id="sup3" class="remove"> remove </button>
+    </div>
+    <!-- photo de 3e article -->
+        <img height="320px" id="pic3" class="photoItems" src="11192544_86Q4_1119254486q4_om_f-removebg-preview.png">
+ <!-- Le div contenant notre 4e article , ses informations ainsi que ses fonctionnalites  -->
+    <div id="item4"> 
+       <p class="sweetieItem">Sheer Lace Slip </p>
+       <p class="sweetiePrice">Prix:40,000 </p>
+       <button id="ajuster4" class="add">+</button>
+       <button id="reajuster4" class="reduce">-</button>
+       <input type="text" value="0" class="sum"></input>
+       <button class="panierFinal">Ajoutez au panier</button>
+       <button id="sup4"class="remove"> remove </button>
+    </div>
+    <!-- photo du 4e article -->
+     <img height="320px" id="pic4" class="photoItems" src="11213002_86Q4_1121300286q4_om_f-removebg-preview.png">
+   
+     <!-- la partie concernant notre montant total-->
+       <section>0</section>
+       <button id="val" Name="validation du commande">Voir le montant total</button>
+       <a href="#recu"><button id="acc"  Name="validation du commande"> Acceder au panier </button></a> 
+  </div>
+      <!-- la partie concernant notre recu-->
+    <p id="recu"> Votre reçu </p>
+    <p id="prixTotalArticle1"class="prixTotalArticle"> 0</p>
+    <p id="prixTotalArticle2" class="prixTotalArticle"> 0</p>
+    <p id="prixTotalArticle3" class="prixTotalArticle"> 0</p>
+    <p id="prixTotalArticle4"class="prixTotalArticle"> 0</p>
+    <p id="panier1"class="panier"></p>
+    <p id="panier2" class="panier"></p>
+    <p id="panier3"class="panier"></p>
+    <p id="panier4" class="panier"></p>
+     <!-- la partie concernant nos boutons en forme de coeur -->
+    <button  class="heart" id="btn1"><i id="fa1" class="fa-regular fa-heart"></i></button>
+    <button   class="heart" id="btn2"><i  id="fa2"class="fa-regular fa-heart"></i></button>
+    <button  class="heart" id="btn3"><i id="fa3" class="fa-regular fa-heart"></i></button>
+    <button  class="heart" id="btn4"><i id="fa4" class="fa-regular fa-heart"></i></button>
+ </main>
+  <script src="notrePanier.js"></script>
+</body>
+</html>
